@@ -1,0 +1,252 @@
+
+.big-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.btn-black {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    color: #FFFFFF;
+    background: #1B1B1B;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.btn-black:hover {
+    background: #0057FF;
+}
+
+.btn-white {
+    transition: .3s;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    color: #1B1B1B;
+    background: #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.btn-white:hover {
+    background: #0057FF;
+    color: white;
+}
+
+.main-body {
+    position: relative;
+    z-index: 3;
+}
+
+.main-description {
+    align-items: center;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    color: #1B1B1B;
+
+}
+
+.main-title span {
+    color: #0057FF;
+}
+
+.main-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #1B1B1B;
+    margin-top: 16px;
+    max-width: 666px;
+}
+.main-actions {
+    gap: 8px;
+    margin-top: 32px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: #1B1B1B;
+    border-radius: 100px;
+    transition: .3s;
+    padding: 12px 24px;
+    margin-right: 40px;
+    min-height: 44px;
+}
+.icon-voice {
+    font-size: 43px;
+    background: #1B1B1B;
+    transition: .3s;
+    position: absolute;
+    right: -50px;
+    padding: 12px 12px;
+}
+.btn-main {
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 16.71px;
+    color: #FFFFFF;
+    transition:.3s;
+    font-weight: 600;
+}
+.main-actions.active {
+    background: #0057FF;
+    margin-right:0;
+    padding-right: 50px;
+}
+.main-actions.active .icon-voice {
+    right: 10px;
+    background: white;
+    font-size: 14px;
+}
+.main-actions.active .icon-hover {
+    font-size: 25px;
+
+}
+.block-content {
+    margin-top: 60px;
+}
+.block-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #1B1B1B;
+    margin: 0 auto;
+}
+.block-title span {
+    color: #0057FF;
+}
+.range-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 2px;
+    background: #ccc;
+}
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    background-color: #0057FF;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.range-input::-moz-range-thumb {
+    height: 10px;
+    width: 10px;
+    background-color: #0057FF;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+.range-input::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+}
+
+.range-input:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px #0057FF66
+}
+
+.range-input:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px #0057FF66
+}
+
+.range-input::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 10px #0057FF66
+}
+
+.range-input:active::-moz-range-thumb {
+    box-shadow: 0 0 0 13px #0057FF66
+}
+
+.range-input:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 13px #0057FF66;
+}
+
+.value {
+
+    display: none;
+}
+
+.about-us-title span {
+    display: block;
+}
+
+/*=================================================MEDIA START===========================================*/
+
+@media (min-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+    .block-content {
+        margin-top: 32px;
+    }
+
+    .block-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+}
+
+/*=================================================MEDIA END===========================================*/

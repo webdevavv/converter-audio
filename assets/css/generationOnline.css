@@ -1,0 +1,459 @@
+
+.song-online-section {
+    position: relative;
+    min-height: 928px;
+    width: 100%;
+}
+
+.song-online-sub span {
+    display: block;
+}
+
+.song-online-body {
+    padding-top: 184px;
+    padding-bottom: 80px;
+}
+
+.song-online-section::after {
+    content: "";
+    background-image: url('/assets/images/mainBg3.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+
+
+}
+
+.icon-song {
+    font-size: 70px;
+    background-color: #1B1B1B;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.song-online-images {
+    position: relative;
+    z-index: 1;
+    gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.song-image {
+    flex: 0 0 180px;
+    height: 180px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+
+}
+
+.desired-images-span {
+    display: block;
+}
+
+.song-project-name {
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #FFFFFF;
+
+}
+
+.song-project-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.song-project {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 4px 12px;
+    background: #FFFFFF1F;
+    box-shadow: 0px 0px 8px 0px #0000000A;
+    backdrop-filter: blur(16px);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 40px;
+    color: #FFFFFF;
+}
+
+.song-project:hover {
+    opacity: .6;
+}
+
+.song-images-column {
+    gap: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.column-1{
+    animation: scroll-left 45s linear infinite;
+
+}
+.column-2{
+    animation: scroll-right 45s linear infinite;
+
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.desired-item-img {
+    padding: 0;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+.desired-item-img img{
+    width: 100%;
+}
+.song-about-section {
+    position: relative;
+    min-height: 877px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 100px 0;
+}
+
+.song-about-section::after {
+    content: '';
+    position: absolute;
+    background-image: url('/assets/images/songAboutBg.webp');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    z-index: -1;
+    top: 100px;
+}
+
+.song-about-ipad {
+    width: 588px;
+    height: 413px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/assets/images/mockup.webp');
+}
+
+.song-about-content {
+    position: relative;
+    z-index: 2;
+}
+
+.song-about-item {
+    padding: 28px;
+    position: absolute;
+    max-width: 384px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px 0px #0057FF29;
+    z-index: 2;
+    border-radius: 20px;
+
+}
+
+.song-about-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1B1B1B;
+
+}
+
+.song-about-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #1B1B1B;
+    max-width: 328px;
+    margin-top: 12px;
+
+
+}
+
+.song-about-title span {
+    color: #0057FF;
+}
+
+.song-info-one {
+    left: 0;
+    top: 120px;
+}
+
+.song-info-two {
+    right: 0;
+    top: 280px;
+}
+
+.song-info-tree {
+    left: 100px;
+    bottom: -670px;
+}
+
+.song-info-for {
+    right: 100px;
+    bottom: -720px;
+}
+
+.all-spheres-section {
+    position: relative;
+
+}
+
+.all-spheres-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/indispensableBg3.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.generator-advantages-section {
+    min-height: 724px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.advantages-generator-body {
+    align-items: center;
+}
+
+.generator-advantages-section::after {
+    content: '';
+    position: absolute;
+    background-image: url('/assets/images/songAboutBg.webp');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    z-index: -1;
+    top: 0;
+}
+
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .song-about-item {
+        padding: 24px 20px;
+    }
+
+    .song-info-tree {
+        left: 0;
+    }
+
+    .song-info-for {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .song-online-body {
+        padding-top: 144px;
+        padding-bottom: 60px;
+    }
+
+    .song-about-item {
+        position: initial;
+    }
+
+
+    .song-about-ipad {
+        position: initial;
+        left: unset;
+        top: unset;
+        margin-top: 35px;
+        background-image: url('/assets/images/iPad.png');
+        transform: unset;
+    }
+
+    .song-about-section::after {
+        display: none;
+    }
+
+    .song-about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .song-about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+        gap: 12px;
+
+    }
+
+    .song-about-item {
+        max-width: 100%;
+        box-shadow: 0px 0px 16px 0px #0000000F;
+        backdrop-filter: blur(16px);
+        background: #FFFFFF;
+
+    }
+
+    .desired-result-item:nth-child(2) {
+        order: 3;
+
+    }
+
+    .desired-result-item:nth-child(5) {
+        order: 4;
+
+    }
+
+    .desired-images-list {
+        gap: 24px;
+    }
+
+
+    .desired-result-item:nth-child(3) {
+        order: 5;
+
+    }
+
+    .desired-result-item:nth-child(6) {
+        order: 6;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+    .song-project {
+        font-size: 12px;
+    }
+
+    .generator-advantages-section::after {
+        background-image: url('/assets/images/songAboutBg4.jpg');
+    }
+
+    .generator-advantages-section {
+        min-height: 512px;
+    }
+
+    .song-image {
+        flex: 0 0 160px;
+        height: 160px;
+    }
+
+    .song-about-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .song-about-item p {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    .song-about-content {
+        margin-top: -20px;
+    }
+
+    .song-about-section {
+        padding: 40px 0;
+    }
+
+    .song-about-ipad {
+        width: 330px;
+        background-size: contain;
+        height: 250px;
+        background-position: bottom;
+    }
+
+    .desired-item-img {
+        margin-top: -32px;
+    }
+
+    .song-images-column {
+        gap: 12px;
+    }
+
+    .song-online-images {
+        gap: 12px;
+    }
+
+    .song-online-section {
+        min-height: 790px;
+    }
+
+    .song-online-section::after {
+        background-image: url('/assets/images/mainBg4.jpg');
+
+    }
+}

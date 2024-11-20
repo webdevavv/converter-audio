@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Music Generator </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="container">
+            <div class="header-body G-justify-between">
+                <a class="header-logo" href="index.html">
+                    <img src="assets/images/logo-type-1.svg" alt="">
+                </a>
+                <div class="menu-bg"></div>
+                <nav class="menu">
+
+                    <div class="menu-content-mobile">
+                        <a class="header-logo" href="">
+                            <img src="assets/images/logo-type-1.svg" alt="">
+                        </a>
+                        <p class="menu-clue">ИИ-Генератор музыки</p>
+                    </div>
+
+                    <ul class="menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-actions ">
+                        <button class="btn-login btn-white">Вход</button>
+                        <button class="btn-register-mobile btn-black ">Регистрация</button>
+                    </div>
+
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="header-actions G-align-center">
+                    <button class="btn-login btn-white">Вход</button>
+                    <button class="btn-register btn-black  ">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="generator-section ">
+            <div class="container">
+                <div class="generator-body">
+                    <div class="main-description G-flex-column">
+                        <h1 class="main-title">ИИ-Генератор <span>музыки</span></h1>
+                        <p class="generator-sub main-sub-title">
+                            Создавайте высококачественную музыку за минуту
+                            <span>
+                            для ваших видео, социальных сетей и других проектов
+                        </span>
+                        </p>
+                        <div class="main-actions G-align-center">
+                            <button class="btn-main ">
+                                Начать сейчас
+                            </button>
+                            <a class="icon icon-voice " href=""></a>
+                        </div>
+                    </div>
+
+                    <div class="generator-slides">
+                        <div class="generator-swiper swiper">
+                            <div class="generator-swiper-wrapper swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="generator-slide">
+                                        <div class="generator-slide-img">
+                                            <img src="assets/images/generatorSlide2.webp" alt="">
+                                        </div>
+                                        <div class="generator-slide-name">Шансон</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="generator-slide">
+                                        <div class="generator-slide-img">
+                                            <img src="assets/images/generatorSlide3.webp" alt="">
+                                        </div>
+                                        <div class="generator-slide-name">Классическая</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="generator-slide">
+                                        <div class="generator-slide-img">
+                                            <img src="assets/images/generatorSlide1.webp" alt="">
+                                        </div>
+                                        <div class="generator-slide-name">Рок</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="generator-slide">
+                                        <div class="generator-slide-img">
+                                            <img src="assets/images/generatorSlide4.png" alt="">
+                                        </div>
+                                        <div class="generator-slide-name">Хип-хоп</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="generator-slide">
+                                        <div class="generator-slide-img">
+                                            <img src="assets/images/generatorSlide5.png" alt="">
+                                        </div>
+                                        <div class="generator-slide-name">Джаз</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="generator-swiper-pagination swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="possibilities" class="desired-result-section section">
+            <div class="container">
+                <h2 class="desired-title  block-title">
+                    Нужный результат
+                    <span> за минуту</span>
+                </h2>
+
+                <div class="desired-result-content block-content">
+                    <div class="desired-result-list G-flex">
+                        <div class="desired-result-item G-flex-column">
+                            <h3 class="result-item-title ">01</h3>
+                            <p class="result-sub-title">Ввод описания</p>
+                            <p class="result-clue-width2 result-clue">
+                                Войдите в свою учетную запись
+                                <span class="clue-wrap-mobile"> и введите описание песни или текст</span>
+                                в поле ввода ИИ-генератора
+                            </p>
+                        </div>
+                        <div class="desired-result-item G-flex-column">
+                            <h3 class="result-item-title">02</h3>
+                            <p class="result-sub-title">Генерация и настройка</p>
+                            <p class="result-clue">
+                                Создайте музыку и примените
+                                <span> к ней дополнительные</span>
+                                <span>настройки редактирования</span>
+                            </p>
+                        </div>
+                        <div class="desired-result-item G-flex-column">
+                            <h3 class="result-item-title">03</h3>
+                            <p class="result-sub-title">Скачайте результат</p>
+                            <p class="result-clue-width result-clue ">
+                                Когда вы будете довольны созданной
+                                <span>музыкой, скачайте трек прямо</span>
+                                <span>с платформы Assistant AI</span>
+                        </div>
+                    </div>
+
+                    <div class="desired-result-media">
+                        <img class="desired-result-image" src="assets/images/desired-result.jpg" alt="">
+                        <img class="desired-image-mobile" src="assets/images/desired-resultMobile.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="about-us-section section">
+            <div class="container">
+                <h2 class="about-us-title block-title">Почему всем нравится <span>Assistant AI</span></h2>
+                <div class="about-us-content block-content G-flex-column">
+
+                    <div class="about-us-column scroll-element G-flex">
+                        <div class="about-us-item">
+                            <h3 class="about-item-title">Удобство и простота</h3>
+                            <p class="about-item-text">
+                                Assistant AI — это платформа, на которой легко создавать музыку. Даже если у вас нет
+                                музыкального опыта, вы сможете записать профессиональные треки без усилий.
+                            </p>
+                            <p class="about-text-change about-item-text">
+                                В этом помогут простой интерфейс
+                                <span>и удобный функционал</span>
+                            </p>
+                        </div>
+                        <div class=" about-us-img G-flex">
+                            <img src="assets/images/about-us5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="about-us-column scroll-element G-flex">
+                        <div class="about-item-padding about-us-item">
+                            <h3 class="about-item-title">Качество на высоте</h3>
+                            <p class=" about-item-text">
+                                Инновационная технология Assistant AI позволяет создавать музыку на основе текста с
+                                высоким качеством звучания.
+                            </p>
+                            <p class="about-text-change about-item-text">
+                                Используя эти инструменты, пользователи могут записать треки, которые сопоставимы с
+                                профессиональными студийными записями
+                            </p>
+                        </div>
+                        <div class=" about-us-img G-flex">
+                            <img src="assets/images/about-us6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="about-us-column scroll-element G-flex">
+                        <div class="about-us-item">
+                            <h3 class="about-item-title">Экономичное производство</h3>
+                            <p class="about-text-width about-item-text">
+                                Применение искусственного интеллекта Assistant AI позволяет отказаться от дорогостоящей
+                                студийной работы
+                                и услуг профессиональных музыкантов.
+                            </p>
+                            <p class="about-text-change about-item-text">
+                                Такой подход делает музыку, созданную с помощью ИИ, доступной для всех
+                            </p>
+                        </div>
+                        <div class=" about-us-img G-flex">
+                            <img src="assets/images/about-us7.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="about-us-column scroll-element G-flex">
+                        <div class="about-item-padding36 about-us-item">
+                            <h3 class="about-item-title">Многообразие применения</h3>
+                            <p class="about-text-width2 about-item-text">
+                                Музыку, созданную с помощью нейросети, можно применять
+                                в разных областях: от фонового сопровождения видео
+                                и подкастов до написания саундтреков к играм.
+                            </p>
+                            <p class="about-text-change about-item-text">
+                                Такая универсальность делает музыку, написанную ИИ, ценным инструментом для различных
+                                творческих задач
+                            </p>
+                        </div>
+                        <div class=" about-us-img G-flex">
+                            <img src="assets/images/about-us8.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="innovative-section section scroll-element">
+            <div class="container">
+                <h2 class="innovative-title block-title"><span>Инновационные</span> возможности</h2>
+                <div class="innovative-content block-content G-flex">
+                    <div class="innovative-img">
+                        <img src="assets/images/Innovative3.jpg" alt="">
+                    </div>
+                    <div class="innovative-img">
+                        <img src="assets/images/Innovative4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="innovative-tools G-justify-between">
+                    <h3 class="innovative-tools-title">Реализуйте свой потенциал с Assistant AI</h3>
+                    <div class="innovative-actions G-align-center">
+                        <button class="btn-main ">
+                            <span> Начать сейчас</span>
+                            <i class="icon icon-hover "></i>
+                        </button>
+                        <a class="icon icon-voice" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="forWhom"  class="assistant-section indispensable-section section pin-content">
+            <div class="container">
+                <div class="indispensable-body ">
+                    <h2 class="indispensable-title block-title"><span>Незаменимый помощник</span> для всех сфер</h2>
+
+                    <div class="indispensable-content block-content  G-flex-column">
+
+                        <div class="indispensable-column G-justify-between">
+                            <div class=" indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable8.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Композиторы</h3>
+                                    <p>
+                                        Поможет в создании мелодий и аранжировок, предлагая новые идеи
+                                        к написанию музыки
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable9.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Преподаватели</h3>
+                                    <p>
+                                        Продемонстрирует различные музыкальные стили и жанры. Создаст обучающий материал
+                                        и задания для студентов
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="indispensable-column G-flex">
+                            <div class="indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable10.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Радиоведущие</h3>
+                                    <p>
+                                        Создаст уникальные музыкальные заставки
+                                        и рекламные джинглы, привлекая внимание слушателей
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable11.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Разработчики игр
+                                        <span>и приложений</span></h3>
+                                    <p>
+                                        Создаст музыкальные треки, для использования в качестве фоновой музыки в
+                                        приложениях
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="indispensable-column G-flex">
+                            <div class=" indispensable-flex animation-card">
+                                <div class="indispensable-card-image indispensable-flex-image">
+                                    <img src="assets/images/indispensable12.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text indispensable-flex-text">
+                                    <h3 class="indispensable-item-title">Диджеи</h3>
+                                    <p>
+                                        Может создавать уникальные музыкальные треки, которые диджей может использовать
+                                        в своих выступлениях
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable13.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Телевизионные компании</h3>
+                                    <p>
+                                        Поможет в создании звуковых эффектов
+                                        и музыки для фильмов, сериалов и телепередач </p>
+                                </div>
+                            </div>
+
+                            <div class="indispensable-card animation-card">
+                                <div class="indispensable-card-image">
+                                    <img src="assets/images/indispensable14.jpg" alt="">
+                                </div>
+                                <div class="indispensable-card-text">
+                                    <h3 class="indispensable-item-title">Маркетологи</h3>
+                                    <p>
+                                        Сгенерирует музыкальные треки для рекламы товаров и услуг, повысит узнаваемость
+                                        бренда
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="indispensable-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class=" indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable8.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Композиторы</h3>
+                                        <p>
+                                            Поможет в создании мелодий и аранжировок, предлагая новые идеи
+                                            к написанию музыки
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable9.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Преподаватели</h3>
+                                        <p>
+                                            Продемонстрирует различные музыкальные стили и жанры. Создаст обучающий
+                                            материал
+                                            и задания для студентов
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable13.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Телевизионные компании</h3>
+                                        <p>
+                                            Поможет в создании звуковых эффектов
+                                            и музыки для фильмов, сериалов и телепередач </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable11.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Разработчики игр
+                                            <span>и приложений</span></h3>
+                                        <p>
+                                            Создаст музыкальные треки, для использования в качестве фоновой музыки в
+                                            приложениях
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class=" indispensable-flex">
+                                    <div class="indispensable-card-image indispensable-flex-image">
+                                        <img src="assets/images/indispensable12.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text indispensable-flex-text">
+                                        <h3 class="indispensable-item-title">Диджеи</h3>
+                                        <p>
+                                            Может создавать уникальные музыкальные треки, которые диджей может
+                                            использовать
+                                            в своих выступлениях
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable6.webp" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Сотрудники <span>колл-центров</span></h3>
+                                        <p>
+                                            Которые обрабатывают большое количество звонков и быстро фиксируют
+                                            информацию
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="indispensable-card">
+                                    <div class="indispensable-card-image">
+                                        <img src="assets/images/indispensable14.jpg" alt="">
+                                    </div>
+                                    <div class="indispensable-card-text">
+                                        <h3 class="indispensable-item-title">Маркетологи</h3>
+                                        <p>
+                                            Сгенерирует музыкальные треки для рекламы товаров и услуг, повысит
+                                            узнаваемость
+                                            бренда
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indispensable-pagination swiper-pagination"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="reviews"  class="reviews-section section">
+            <div class="reviews-container">
+                <h2 class="reviews-title block-title">Отзывы пользователей</h2>
+
+                <div class="reviews-slider">
+
+                    <div class="reviews-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Сразу начали использовать транскрибацию. Не стоял вопрос, чтобы не переводить
+                                        аудио в текст, потому что это <span>
+                                        необходимо,
+                                        это упрощает работу, сокращает время»
+                                    </span>
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author.jpg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Кибе Виктория</h3>
+                                            <p class="author-profession">Product designer</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Неожиданно понадобилось перевести
+                                        в текст сомнительного качества запись голоса. Вручную совсем не пошло,
+                                        спасибо, что есть такие сервисы!»
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author2.svg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Смирнов Максим</h3>
+                                            <p class="author-profession">Студент юридического факультета</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Сначала пользовался сам, потом принес в компанию. Достаточно удобно для таких
+                                        вещей, когда много встреч,
+                                        это спасает. Сокращает время на записи,
+                                        постмиты и прочее очень»
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author3.jpg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Забродин Павел</h3>
+                                            <p class="author-profession">Lead Product Manager</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Я использую нейросети для создания ремиксов, которые я включаю на своих
+                                        выступлениях. Они помогают мне разнообразить репертуар и привлечь больше
+                                        слушателей»
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author4.jpg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Гранкина Юлия</h3>
+                                            <p class="author-profession">Диджей</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Assistant AI — это просто находка для меня! Он помогает мне придумывать новые
+                                        мелодии и аранжировки, которые раньше я бы не смог создать самостоятельно»
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author5.jpg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Акимов Илья</h3>
+                                            <p class="author-profession">Композитор</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-item G-flex-column">
+                                    <div class="reviews-text">
+                                        «Генерация различных звуковых эффектов
+                                        и инструментов с помощью нейросетей стала для меня настоящим спасением. Я могу
+                                        экспериментировать с новыми звуками
+                                        и создавать уникальные треки»
+                                    </div>
+                                    <div class="reviews-author G-align-center">
+                                        <div class="reviews-author-img">
+                                            <img src="assets/images/reviews-author6.jpg" alt="">
+                                        </div>
+                                        <div class="reviews-author-info">
+                                            <h3 class="author-name">Куценко Максим</h3>
+                                            <p class="author-profession">Звукорежиссёр</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="reviews-swiper-pagination  swiper-pagination"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <h2 class="faq-title block-title">FAQ</h2>
+                <div class="faq-content block-content G-flex-column">
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Как работает технология Assistant AI для создания уникальных композиций?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Технология Assistant AI анализирует шаблоны существующей музыки и использует их для создания
+                            новых уникальных <span>композиций на основе текста пользователя</span>
+
+                        </div>
+                    </div>
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Какие преимущества у Assistant AI для нас?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Assistant AI позволяет нам создавать высококачественную музыку без необходимости в
+                            продвинутых технических навыках
+                            <span> или дорогом оборудовании. Это демократизирует производство музыки, делая его доступным для всех</span>
+                        </div>
+                    </div>
+
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Может ли нейросеть создавать песни с текстом?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Да, наша нейросеть может создавать песни с текстом. Вы можете вводить текстовые описания или
+                            конкретные тексты,
+                            <span>и она создаст полную песню с инструментальными и вокальными элементами</span>
+                        </div>
+                    </div>
+
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Подходит ли Assistant AI профессиональным музыкантам?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Абсолютно. Assistant AI разработан, чтобы быть ценным инструментом для профессиональных
+                            музыкантов, предлагая возможность экспериментировать с новыми музыкальными стилями,
+                            создавать демо или находить вдохновение для новых проектов. Его способность производить
+                            музыку качества радио делает его необходимым активом для всех, кто участвует
+                            в музыкальной индустрии
+                        </div>
+                    </div>
+
+
+                    <div class="often-asks-item">
+                        <div class="asks-item-header G-justify-between">
+                            <p>Могу ли я изменить сгенерированные песни?</p>
+                            <div class="asks-list-icon G-center"></div>
+                        </div>
+                        <div class="asks-list-sub">
+                            Да, пользователи могут настраивать каждый элемент своей песни, включая удаление вокала, изменение инструментов
+                            и адаптацию трека к своим уникальным предпочтениям. Эта функция позволяет создавать по-настоящему
+                            оригинальные композиции
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="advantages-section">
+            <div class="container">
+                <div class="fast-unique-body   G-flex-column">
+                    <h2 class="advantages-title">Быстро. Удобно. Эффективно.</h2>
+                    <p class="advantages-sub-title">Откройте для себя новые горизонты в музыке с Assistant AI</p>
+                    <div class="main-actions advantages-actions G-align-center">
+                        <button class="btn-main ">
+                            <span> Начать работу</span>
+                            <i class="icon icon-hover "></i>
+                        </button>
+                        <a class="icon icon-voice" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body G-justify-between">
+                <a class="footer-logo" href="index.html">
+                    <img src="assets/images/footerLogo.svg" alt="">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn-white footer-btn">Регистрация</button>
+
+            </div>
+            <div class="footer-clue ">
+                <span> ©2024 Assistant AI.</span>
+                <span>Все права защищены</span>
+            </div>
+            <h2 class="footer-big-text">Assistant AI</h2>
+        </div>
+    </footer>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/gsap.js"></script>
+</body>
+</html>
