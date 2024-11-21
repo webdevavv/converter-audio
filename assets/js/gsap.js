@@ -1,39 +1,39 @@
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const initAnimation = () => {
-        if (window.innerWidth > 1000) {
-            const timeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.pin-content',
-                    start: 'top top',
-                    end: '+=1000',
-                    scrub: true,
-                    pin: true,
-                    anticipatePin: 1,
-                }
-            });
-
-            timeline.to('.animation-card', {
-                yPercent: -100,
-                ease: 'none',
-                stagger: 0.1,
-            });
-        }
-    };
-
-    initAnimation();
-
-    window.addEventListener('resize', () => {
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        initAnimation();
-    });
-});
-
-
-
+// document.addEventListener("DOMContentLoaded", () => {
+//     gsap.registerPlugin(ScrollTrigger);
+//
+//     const initAnimation = () => {
+//         if (window.innerWidth > 1000) {
+//             const timeline = gsap.timeline({
+//                 scrollTrigger: {
+//                     trigger: '.pin-content',
+//                     start: 'top top',
+//                     end: '+=1000',
+//                     scrub: true,
+//                     pin: true,
+//                     anticipatePin: 1,
+//                 }
+//             });
+//
+//             timeline.to('.animation-card', {
+//                 yPercent: -100,
+//                 ease: 'none',
+//                 stagger: 0.1,
+//             });
+//         }
+//     };
+//
+//     initAnimation();
+//
+//     window.addEventListener('resize', () => {
+//         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+//         initAnimation();
+//     });
+// });
+//
+//
+//
 
 
 document.addEventListener("DOMContentLoaded", () => {
