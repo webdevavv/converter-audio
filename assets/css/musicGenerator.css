@@ -184,6 +184,8 @@
 .advantages-actions{
     position: relative;
     z-index: 5;
+    margin-top: 32px;
+    right: 20px;
 }
 .fast-unique-body::before {
     content: '';

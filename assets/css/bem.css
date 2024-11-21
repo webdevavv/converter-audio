@@ -90,9 +90,9 @@
     margin-top: 16px;
     max-width: 666px;
 }
+
 .main-actions {
     gap: 8px;
-    margin-top: 32px;
     justify-content: center;
     position: relative;
     z-index: 2;
@@ -100,8 +100,16 @@
     border-radius: 100px;
     transition: .3s;
     padding: 12px 24px;
-    margin-right: 40px;
     min-height: 44px;
+    cursor: pointer;
+}
+.actions-change{
+    margin-top: 32px;
+    right: 20px;
+
+}
+.action-right{
+     right: 40px;
 }
 .icon-voice {
     font-size: 43px;
@@ -110,7 +118,10 @@
     position: absolute;
     right: -50px;
     padding: 12px 12px;
+    pointer-events: none; /* Отключает реакцию на события */
+
 }
+
 .btn-main {
     background: transparent;
     cursor: pointer;
@@ -120,26 +131,31 @@
     font-size: 14px;
     line-height: 16.71px;
     color: #FFFFFF;
-    transition:.3s;
+    transition: .3s;
     font-weight: 600;
 }
+
 .main-actions.active {
     background: #0057FF;
-    margin-right:0;
+    margin-right: 0;
     padding-right: 50px;
 }
+
 .main-actions.active .icon-voice {
     right: 10px;
     background: white;
     font-size: 14px;
 }
+
 .main-actions.active .icon-hover {
     font-size: 25px;
 
 }
+
 .block-content {
     margin-top: 60px;
 }
+
 .block-title {
     font-size: 32px;
     font-weight: 600;
@@ -148,9 +164,11 @@
     color: #1B1B1B;
     margin: 0 auto;
 }
+
 .block-title span {
     color: #0057FF;
 }
+
 .range-input {
     -webkit-appearance: none;
     appearance: none;
@@ -161,6 +179,7 @@
     height: 2px;
     background: #ccc;
 }
+
 .range-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -226,7 +245,9 @@
 
 
 @media (max-width: 992px) {
-
+    .action-right{
+        right: 20px;
+    }
 
 }
 

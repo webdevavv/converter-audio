@@ -52,7 +52,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.querySelectorAll('.btn-main').forEach(btn => {
+document.querySelectorAll('.main-actions').forEach(btn => {
     const iconVoice = btn.parentElement.querySelector('.icon-voice');
     const mainActions = btn.closest('.main-actions');
 
