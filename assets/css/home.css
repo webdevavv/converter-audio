@@ -166,6 +166,7 @@
 .result-tools-buttons {
     margin-top: 78px;
     gap: 8px;
+    max-width: max-content;
 
 }
 
