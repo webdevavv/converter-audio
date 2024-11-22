@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            // timeline.to('.animation-card', {
-            //     yPercent: -100,
-            //     ease: 'none',
-            //     stagger: 0.1,
-            // });
+            timeline.to('.animation-card', {
+                yPercent: -100,
+                ease: 'none',
+                stagger: 0.1,
+            });
         }
     };
     initAnimation();

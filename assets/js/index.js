@@ -149,36 +149,36 @@ document.querySelectorAll('.song-images-column').forEach((column) => {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const items = document.querySelectorAll('.animation-card');
-    let lastScrollPosition = 0; // Хранит последнее положение скролла
-
-    function handleScroll() {
-        const currentScrollPosition = window.scrollY; // Текущее положение скролла
-        const scrollingDown = currentScrollPosition > lastScrollPosition;
-        items.forEach((item, index) => {
-            const elementRect = item.getBoundingClientRect();
-            const isElementVisible = elementRect.top < window.innerHeight && elementRect.bottom >= 0;
-            if (scrollingDown) {
-                if (!isElementVisible) {
-                    item.classList.remove('visible');
-                }
-                if (isElementVisible && !item.classList.contains('visible')) {
-                    const delay = index * 20;
-                    setTimeout(() => {
-                        item.classList.add('visible');
-                    }, delay);
-                }
-            } else {
-                if (!item.classList.contains('visible')) {
-                    item.classList.add('visible');
-                }
-            }
-        });
-
-        lastScrollPosition = currentScrollPosition;
-    }
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const items = document.querySelectorAll('.animation-card');
+//     let lastScrollPosition = 0; // Хранит последнее положение скролла
+//
+//     function handleScroll() {
+//         const currentScrollPosition = window.scrollY; // Текущее положение скролла
+//         const scrollingDown = currentScrollPosition > lastScrollPosition;
+//         items.forEach((item, index) => {
+//             const elementRect = item.getBoundingClientRect();
+//             const isElementVisible = elementRect.top < window.innerHeight && elementRect.bottom >= 0;
+//             if (scrollingDown) {
+//                 if (!isElementVisible) {
+//                     item.classList.remove('visible');
+//                 }
+//                 if (isElementVisible && !item.classList.contains('visible')) {
+//                     const delay = index * 20;
+//                     setTimeout(() => {
+//                         item.classList.add('visible');
+//                     }, delay);
+//                 }
+//             } else {
+//                 if (!item.classList.contains('visible')) {
+//                     item.classList.add('visible');
+//                 }
+//             }
+//         });
+//
+//         lastScrollPosition = currentScrollPosition;
+//     }
+//
+//     handleScroll();
+//     window.addEventListener('scroll', handleScroll);
+// });

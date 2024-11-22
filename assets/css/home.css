@@ -366,18 +366,18 @@
 
 }
 .animation-card{
-    will-change: transform, opacity;
+    will-change: transform;
     position: relative;
-    transform: translateY(200px);
-    transition: transform 0.6s ease, opacity 0.6s ease;
-    opacity: 0;
+    /*transform: translateY(200px);*/
+    /*transition: transform 0.6s ease, opacity 0.6s ease;*/
+    /*opacity: 0;*/
 
 }
-.animation-card.visible{
-    transform: translateY(0);
-    opacity: 1;
+/*.animation-card.visible{*/
+/*    transform: translateY(0);*/
+/*    opacity: 1;*/
 
-}
+/*}*/
 
 
 .indispensable-title {
@@ -537,7 +537,7 @@
     overflow: unset !important;
 }
 .reviews-section{
-    /*margin-top: -380px;*/
+    margin-top: -380px;
     position: relative;
     z-index: 1;
 }
